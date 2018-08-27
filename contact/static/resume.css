@@ -1,0 +1,40 @@
+body{
+    background: white url("images/background.jpg");
+}
+
+.resume{
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.education{
+    text-align:left;
+}
+
+.skills{
+    text-align:left;
+}
+
+.workHistory{
+    text-align:left;
+}
+
+.charity{
+    text-align:left;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}

@@ -1,0 +1,62 @@
+body{
+    background: white url("images/background.jpg");
+}
+
+div.center{
+    color: white;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+h1{
+    font-size: 4em;
+    margin-bottom: 0em
+}
+
+h3{
+    margin-top: 0em
+}
+
+/* Style all font awesome icons */
+.fab {
+    display:inline-block;
+    font-size: 1.5em;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    vertical-align: bottom;
+    text-decoration: none;
+    border-radius: 50%;
+
+}
+
+/* Add a hover effect if you want */
+.fab:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-github {
+    background: #000000;
+    color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+/* Twitter */
+.fa-hackerrank {
+    background: #00B760;
+    color: white;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'resume.css' %}" />
+  </head>
+  <body>
+
+ <!--navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="{% url 'homepage:index' %}"><img src="{% static 'images/logo.png' %}" style="width:3.5em;height:1.3em;"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="">
+            <a href="{% url 'resume:index' %}">Resume</a>
+
+          </li>
+          <li class="">
+            <a href="{% url 'portfolio:index' %}">Portfolio</a>
+
+          </li>
+          <li class="">
+            <a href="{% url 'contact:index' %}">Contact</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <button class="pdf"><a href="{% url 'resume:pdf' %}">PDF Resume</a></button>
+   <div class="resume">
+
+    <h2>Eduction</h2>
+    <div class="education">
+        <b>
+          Liberty University School of Engineering and Computational Science
+        </b>
+        <p>
+          Bachelor of Science in Computer Science: Software Engineering Minor in Cyber Security
+        </p>
+        <ul>
+          <li>Cumulative GPA: 3.7</li>
+          <li>Dean’s List, Fall 2015, Spring 2016, Fall 2016, and Spring 2018</li>
+        </ul>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills">
+        <h3>Technical</h3>
+        <ul>
+          <li>I have a wide range of technical skills that I have attained from my schooling and from self-study.</li>
+          <li>Two years of experience programming in C++.</li>
+          <li>Experience with installing and operating Linux systems.</li>
+          <li>Network Administration knowledge obtained from self-study and from Liberty’s Cyber Defense Club.</li>
+          <li>Client-side maintenance of Windows computers.</li>
+        </ul>
+
+        <h3><b>Personal</b></h3>
+        <ul>
+          <li>A self-starter.</li>
+          <li>Hard Worker.</li>
+          <li>Fast Learner.</li>
+          <li>Critical Thinker.</li>
+          <li>Work well in groups and individually.</li>
+        </ul>
+    </div>
+
+     <h2>Work History</h2>
+    <div class="workHistory">
+      <h4>Traffic and Technology Director | WBGR | June 2010 - June 2017</h4>
+      <ul>
+        <li>As Traffic Director, I oversee all scheduling and content management.</li>
+        <li>As Technology Director, I implement all new technologies and maintenance all existing systems.</li>
+      </ul>
+      <h4>C++ Tutor | Liberty University | September 2017 - Present</h4>
+      <ul>
+        <li>In this student worker position, I assist other students in their programming assignments.</li>
+      </ul>
+    </div>
+
+     <h2>Charity</h2>
+    <div class="charity">
+      <h4>Farm Manager | Providence Farm | September 2014 - August 2016</h4>
+      <ul>
+        <li>I helped develop a working farm from scratch whose purpose is to provide a haven for veterans and their families suffering from PTSD</li>
+        <li>I managed groups of volunteers and overseeing their work.</li>
+      </ul>
+    </div>
+
+   </div>
+  </body>
+</html>

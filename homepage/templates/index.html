@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+
+ <!--navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="{% url 'homepage:index' %}"><img src="{% static 'images/logo.png' %}" style="width:3.5em;height:1.3em;"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="">
+            <a href="{% url 'resume:index' %}">Resume</a>
+
+          </li>
+          <li class="">
+            <a href="{% url 'portfolio:index' %}">Portfolio</a>
+
+          </li>
+          <li class="">
+            <a href="{% url 'contact:index' %}">Contact</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- title -->
+    <div class="center">
+      <h1>Matthew McLeod</h1>
+      <h3>Development, Security.</h3>
+
+<!-- Socialbar -->
+      <div class="socialBar">
+
+          <a href="https://github.com/Matthew-McLeod" target="_blank"><i class="fab fa-github"></i></a>
+
+          <a href="https://www.linkedin.com/in/matthew-mcleod-45abb815a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+          <a href="https://www.hackerrank.com/dropshot?hr_r=1" target="_blank"><i class="fab fa-hackerrank"></i></a>
+
+      </div>
+    </div>
+  </body>
+</html>
